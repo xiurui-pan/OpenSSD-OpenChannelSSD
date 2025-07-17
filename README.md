@@ -23,6 +23,8 @@ CosmosPlus Directory
                      - Micron_NAND  - CosmosPlus_OpenSSD_Micron_8C2W_19.1     - OpenSSD project w/ Micron 8Channel 2Way NAND module on CosmosPlus board.
                                     - CosmosPlus_OpenSSD_Micron_8C2W_19.1_ns  - OpenSSD project(multiple namespace) w/ Micron 8Channel 2Way NAND module on CosmosPlus board.
 
+          - 2025.1 - Micron_NAND - CosmosPlus_OpenSSD_Micron_8C2W - OpenSSD project w/ Micron 8Channel 2Way NAND module on CosmosPlus board - Vivado 2025.1
+
 Daisy Directory
 
            - DOC - documents about Daisy
