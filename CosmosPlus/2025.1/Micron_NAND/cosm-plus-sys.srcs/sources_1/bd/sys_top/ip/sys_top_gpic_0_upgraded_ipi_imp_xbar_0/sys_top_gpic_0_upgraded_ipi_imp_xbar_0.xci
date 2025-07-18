@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "sys_top_gpic_0_upgraded_ipi_imp_xbar_0",
-    "cell_name": "gpic_0_upgraded_ipi/xbar",
+    "cell_name": "gpic_0/xbar",
     "component_reference": "xilinx.com:ip:axi_crossbar:2.1",
     "ip_revision": "37",
     "gen_directory": "../../../../../../cosm-plus-sys.gen/sources_1/bd/sys_top/ip/sys_top_gpic_0_upgraded_ipi_imp_xbar_0",
@@ -1228,8 +1228,8 @@
         "C_AXI_WUSER_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_AXI_RUSER_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_AXI_BUSER_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_M_AXI_WRITE_CONNECTIVITY": [ { "value": "0xFFFFFFFFFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
-        "C_M_AXI_READ_CONNECTIVITY": [ { "value": "0xFFFFFFFFFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_M_AXI_WRITE_CONNECTIVITY": [ { "value": "0x0000000100000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_M_AXI_READ_CONNECTIVITY": [ { "value": "0x0000000100000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_R_REGISTER": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_SINGLE_THREAD": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_S_AXI_WRITE_ACCEPTANCE": [ { "value": "0x00000008", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
@@ -1237,7 +1237,7 @@
         "C_M_AXI_WRITE_ISSUING": [ { "value": "0x0000000800000008", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_M_AXI_READ_ISSUING": [ { "value": "0x0000000800000008", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_S_AXI_ARB_PRIORITY": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
-        "C_M_AXI_SECURE": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_M_AXI_SECURE": [ { "value": "0x0000000000000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_CONNECTIVITY_MODE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
@@ -1353,7 +1353,7 @@
           "parameters": {
             "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ],
-            "TYPE": [ { "value": "INTERCONNECT", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
+            "TYPE": [ { "value": "INTERCONNECT", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "RST": [ { "physical_name": "aresetn" } ]
