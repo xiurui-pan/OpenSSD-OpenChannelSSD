@@ -1,0 +1,7 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]D:\tmp\daisyplus_lpddr4_b_25.1_250819\ws2\daisyplus\export\daisyplus\sw\boot\fsbl.elf
+	[destination_device = pl]D:\tmp\daisyplus_lpddr4_b_25.1_250819\ws2\daisyplus\export\daisyplus\hw\sys_top_wrapper.bit
+	[destination_cpu = a53-0]D:\tmp\daisyplus_lpddr4_b_25.1_250819\ws2\ftl\build\ftl.elf
+}
