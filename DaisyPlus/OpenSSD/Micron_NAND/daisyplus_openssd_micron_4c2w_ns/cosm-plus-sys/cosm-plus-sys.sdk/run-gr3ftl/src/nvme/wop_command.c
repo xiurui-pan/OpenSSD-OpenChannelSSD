@@ -2,6 +2,7 @@
 
 #include "io_access.h"
 #include "wop_command.h"
+#include "wop_storage.h"
 #include "../memory_map.h"
 #include "wop_descriptor.h"
 
@@ -35,6 +36,16 @@ void handle_wop_vendor_cmd(NVME_ADMIN_COMMAND *nvmeAdminCmd, NVME_COMPLETION *nv
         xil_printf("[WOP] controller busy status=0x%08X\r\n", status);
         nvmeCPL->dword[0] = 0;
         nvmeCPL->statusField.SC = SC_COMMAND_SEQUENCE_ERROR;
+        nvmeCPL->statusField.SCT = 0;
+        nvmeCPL->statusField.DNR = 0;
+        nvmeCPL->specific = status;
+        return;
+    }
+
+    if (wop_stage_assets_from_nand(ctrl_dw10.field.cmd_id) != 0) {
+        xil_printf("[WOP] NAND staging failed for cmd=0x%04X\r\n", ctrl_dw10.field.cmd_id);
+        nvmeCPL->dword[0] = 0;
+        nvmeCPL->statusField.SC = SC_INTERNAL_DEVICE_ERROR;
         nvmeCPL->statusField.SCT = 0;
         nvmeCPL->statusField.DNR = 0;
         nvmeCPL->specific = status;

@@ -58,6 +58,7 @@
 - [ ] GPU 协同：定义 Doorbell token 格式、共享内存状态机以及中断回调，规划 33×64 缩参联调脚本。
 - [ ] 日志与调试：增加 `[WOPDBG]` 过滤脚本、GET LOG 扩展项，记录 Doorbell/状态变化。
 - [ ] 长跑验证：准备 NVMe 主机端测试程序，触发 Vendor 命令并监控 `INT_STATUS`/结果写回。
+- [ ] FTL 集成：依据 `wop_storage_plan.md` 预留 NAND 区域，落地 `wop_stage_assets_from_nand()` 的 NAND→DRAM 搬运逻辑。
 
 ## 10. GPU 端进展
 - [x] 创建 `GPU/wop_runtime` 框架：提供 C++17/CUDA 可选 runtime，解析 `wop_descriptor_t`、写回 `wop_result_t`，含占位 memcpy kernel。
