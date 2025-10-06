@@ -9,6 +9,9 @@
 #define WOP_NAND_BLOCKS_BSK          64U
 #define WOP_NAND_BLOCKS_KSK          64U
 
+#define WOP_TLWE_MAX_WORDS           4096U
+#define WOP_GLWE_MAX_WORDS           4096U
+
 #ifdef __cplusplus
 extern "C" {
 #endif
