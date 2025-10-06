@@ -54,6 +54,7 @@
 #include "host_lld.h"
 #include "nvme_identify.h"
 #include "nvme_admin_cmd.h"
+#include "wop_command.h"
 
 extern NVME_CONTEXT g_nvmeTask;
 
@@ -527,6 +528,11 @@ void handle_nvme_admin_cmd(NVME_COMMAND *nvmeCmd)
 		{
 			nvmeCPL.dword[0] = 0;
 			nvmeCPL.specific = 0x0;
+			break;
+		}
+		case ADMIN_WOP_CONTROL:
+		{
+			handle_wop_vendor_cmd(nvmeAdminCmd, &nvmeCPL);
 			break;
 		}
 		default:

@@ -80,6 +80,7 @@
 #define ADMIN_FORMAT_NVM									0x80
 #define ADMIN_DOORBELL_BUFFER_CONFIG						0x7C
 #define ADMIN_SECURITY_SEND									0x81
+#define ADMIN_WOP_CONTROL								0xC0
 #define ADMIN_SECURITY_RECEIVE								0x82
 
 /*Opcodes for IO Commands */

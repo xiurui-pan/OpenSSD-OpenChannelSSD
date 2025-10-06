@@ -66,6 +66,7 @@
 #include "nvme_main.h"
 #include "nvme_admin_cmd.h"
 #include "nvme_io_cmd.h"
+#include "wop_command.h"
 
 #include "../memory_map.h"
 
@@ -92,6 +93,7 @@ void nvme_main()
 	xil_printf("!!! Wait until FTL reset complete !!! \r\n");
 
 	InitFTL();
+	wop_ctrl_init();
 
 	xil_printf("\r\nFTL reset complete!!! \r\n");
 	xil_printf("Turn on the host PC \r\n");
