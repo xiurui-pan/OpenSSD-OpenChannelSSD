@@ -414,6 +414,8 @@ void nvme_main()
         }
 #endif
 
+		wop_service();
+
 		if(exeLlr && ((nvmeDmaReqQ.headReq != REQ_SLOT_TAG_NONE) || notCompletedNandReqCnt || blockedReqCnt))
 		{
 #if 0
@@ -449,5 +451,4 @@ void nvme_main()
 		}
 	}
 }
-
 

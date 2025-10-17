@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct  7 15:30:27 2025
+# Process ID: 3165579
+# Current directory: /home/pxr/workspace/OpenSSD-OpenChannelSSD/DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns
+# Command line: vivado -mode batch -source scripts/build_wop_2019.tcl
+# Log file: /home/pxr/workspace/OpenSSD-OpenChannelSSD/DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/vivado.log
+# Journal file: /home/pxr/workspace/OpenSSD-OpenChannelSSD/DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/vivado.jou
+#-----------------------------------------------------------
+source scripts/build_wop_2019.tcl

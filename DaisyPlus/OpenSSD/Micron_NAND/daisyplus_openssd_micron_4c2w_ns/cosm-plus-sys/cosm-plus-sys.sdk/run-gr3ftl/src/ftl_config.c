@@ -52,6 +52,7 @@
 #include "memory_map.h"
 #include "t4nsc_ucode.h"
 #include "nsc_driver.h"
+#include "wop_storage.h"
 
 unsigned int storageCapacity_L;
 T4REGS chCtlReg[USER_CHANNELS];
@@ -66,6 +67,7 @@ void InitFTL()
 	InitReqScheduler();
 	InitNandArray();
 	InitAddressMap();
+	wop_reserve_asset_blocks();
 	InitDataBuf();
 	InitGcVictimMap();
 

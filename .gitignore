@@ -1,0 +1,8 @@
+DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/*
+DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/cosm-plus-sys/cosm-plus-sys.runs/*
+DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/cosm-plus-sys-2019/cosm_plus_sys_2019.srcs/sources_1/bd/*
+*.backup.log
+*.backup.jou
+*.xml
+*.xci
+DaisyPlus/OpenSSD/Micron_NAND/daisyplus_openssd_micron_4c2w_ns/cosm-plus-sys/cosm-plus-sys.srcs/sources_1/bd/sys_top/ip/*
